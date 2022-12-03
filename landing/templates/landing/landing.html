@@ -1,0 +1,9 @@
+{% for css in page.css %}
+<link rel="stylesheet" href="{{ css.from }}" type="text/css" media="all"/>
+{% endfor %}
+
+{% for js in page.js %}
+<script src="{{ js.from }}"></script>
+{% endfor %}
+
+{{ page.html | safe }}
